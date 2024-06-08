@@ -6,7 +6,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+
+      },
+      fontFamily: {
+        "display": ["poppins", "sans-serif"],
+        "body": ["inter", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
