@@ -6,6 +6,7 @@ import { Comment } from 'postcss';
 import Companies from './Companies';
 import Bento from './Bento';
 import Steps from './Steps';
+import Testimonials from './Testimonials';
 
 export default function Main() {
     return (
@@ -14,6 +15,7 @@ export default function Main() {
             <Companies />
             <Steps />
             <Bento />
+            <Testimonials />
         </div>
     );
 }

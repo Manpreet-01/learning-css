@@ -52,9 +52,6 @@ export default function Bento() {
                     </div>
                 </div>
             </div>
-
-
-            <div className="h-96"></div>
         </div>
     );
 }
