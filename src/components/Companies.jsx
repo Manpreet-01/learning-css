@@ -1,6 +1,17 @@
 import { useRef } from "react";
 import { useEffect } from "react";
 
+function throttle(fn, wait) {
+    let inThrottle = false;
+    return function (...args) {
+        if (!inThrottle) {
+            fn.apply(this, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, wait);
+        }
+    };
+}
+
 export default function Companies() {
     const line1Ref = useRef();
     const line2Ref = useRef();
@@ -8,7 +19,6 @@ export default function Companies() {
     const observerRef = useRef();
 
     useEffect(() => {
-        let totalTranslate = 0;
         function setupIntersectionObserver(ele, isLTR, speed) {
             observerRef.current = new IntersectionObserver(entries => {
                 const { isIntersecting, target } = entries[0];
@@ -16,7 +26,9 @@ export default function Companies() {
                 const initialTranslateRTL = 36 * 4;
 
                 function scrollHandler() {
-                    const translateX = window.innerHeight - target.getBoundingClientRect().top * speed;
+                    const translateX = (window.innerHeight - target.getBoundingClientRect().top) * speed;
+                    let totalTranslate = 0;
+                    
                     if (isLTR) totalTranslate = translateX + initialTranslateLTR;
                     else totalTranslate = -(translateX + initialTranslateRTL);
 
@@ -33,6 +45,8 @@ export default function Companies() {
         setupIntersectionObserver(line1Ref.current, true, 0.15);
         setupIntersectionObserver(line2Ref.current, false, 0.15);
         setupIntersectionObserver(line3Ref.current, true, 0.15);
+
+        console.log('eefff');
 
         return () => observerRef.current.disconnect();
 
@@ -200,8 +214,6 @@ export default function Companies() {
                     </div>
                 </div>
             </div>
-
-            <div className="h-[600px]"></div>
         </div>
     );
 }
