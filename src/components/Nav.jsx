@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import React from 'react';
-
 export default function Nav() {
     const [isExpanded, setIsExpanded] = useState(false);
 
