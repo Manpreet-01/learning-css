@@ -5,12 +5,14 @@ import Hero from './Hero';
 import { Comment } from 'postcss';
 import Companies from './Companies';
 import Bento from './Bento';
+import Steps from './Steps';
 
 export default function Main() {
     return (
         <div className='min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent'>
             <Hero />
             <Companies />
+            <Steps />
             <Bento />
         </div>
     );

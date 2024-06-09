@@ -2,7 +2,7 @@
 
 export default function Bento() {
     return (
-        <div id="bento-grid" class="container">
+        <div id="bento-grid" className="container">
             <h2 className="text-5xl sm:font-semibold mb-14 max-w-2xl leading-normal">ToDesktop handle the details</h2>
 
             <div className="grid-container flex flex-col gap-6 lg:grid lg:grid-cols-3" style={{ gridAutoRows: '96px' }}>
