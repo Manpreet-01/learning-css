@@ -53,16 +53,16 @@ export default function Testimonials() {
             </div>
 
             <div className="flex flex-col lg:flex-row justify-between gap-4 mt-4">
-                <div className="rounded-2xl bg-white gradient-hover-outer">
-                    <div className="flex flex-col gap-6 gradient-hover-inner rounded-2xl p-6">
-                        <div className="flex items-center gap-4">
+                <div className="flex-1 rounded-2xl bg-white gradient-hover-outer">
+                    <div className="flex flex-col w-full h-full gap-6 gradient-hover-inner rounded-2xl p-6">
+                        <div className="flex lg:flex-col lg:items-start pl-4 lg:pt-4 items-center gap-4">
                             <div className="w-12 h-12  bg-blue-200 flex items-center justify-center rounded-full">
                                 <i className="fa-solid fa-code"></i>
                             </div>
                             <h3 className='text-2xl font-semibold'>Native APIs</h3>
-                        </div>                        
-                        <p className='text-lg font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim sint voluptate tempora veritatis quaerat quia quasi delectus ratione obcaecati? Deleniti quaerat laudantium assumenda. Cum, consectetur quis. Dolore, quas. Doloribus, consequatur voluptates.</p>
-                        <div className="flex">
+                        </div>
+                        <p className='flex-1 text-lg font-light lg:mt-4 px-4'>What sets ToDesktop apart is its seamless integration with native APIs using our existing web codebase. By tapping into APIs like Tray and Notifications, we've crafted an exceptionally polished desktop user experience.</p>
+                        <div className="flex pl-4 lg:mt-6">
                             <div className="w-12 h-12 -mr-3 flex justify-center items-center rounded-full overflow-hidden border border-white">
                                 <img src="asset 47.png" className='min-w-16 min-h-16' alt="" />
                             </div>
@@ -77,16 +77,16 @@ export default function Testimonials() {
                     </div>
                 </div>
 
-                <div className="rounded-2xl bg-white gradient-hover-outer">
-                    <div className="flex flex-col gap-6 gradient-hover-inner rounded-2xl p-6">
-                        <div className="flex items-center gap-4">
-                            <div className="w-12 h-12  bg-blue-200 flex items-center justify-center rounded-full">
-                                <i className="fa-solid fa-code"></i>
+                <div className="flex-1  rounded-2xl bg-white gradient-hover-outer">
+                    <div className="flex flex-col w-full h-full justify-stretch gap-6 gradient-hover-inner rounded-2xl p-6">
+                        <div className="flex lg:flex-col lg:items-start pl-4 lg:pt-4 items-center gap-4">
+                            <div className="w-12 h-12  bg-red-200 flex items-center justify-center rounded-full">
+                                <i className="fa-solid fa-magic"></i>
                             </div>
-                            <h3 className='text-2xl font-semibold'>Native APIs</h3>
-                        </div>                        
-                        <p className='text-lg font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim sint voluptate tempora veritatis quaerat quia quasi delectus ratione obcaecati? Deleniti quaerat laudantium assumenda. Cum, consectetur quis. Dolore, quas. Doloribus, consequatur voluptates.</p>
-                        <div className="flex">
+                            <h3 className='text-2xl font-semibold'>Clean, less cluttered UI</h3>
+                        </div>
+                        <p className='flex-1 text-lg font-light lg:mt-4 px-4'>Having a desktop app gives us the freedom to design the experience we want, including better keyboard shortcuts and a cleaner UI. It was a no-brainer for us to use ToDesktop.</p>
+                        <div className="flex pl-4 lg:mt-12">
                             <div className="w-12 h-12 -mr-3 flex justify-center items-center rounded-full overflow-hidden border border-white">
                                 <img src="asset 47.png" className='min-w-16 min-h-16' alt="" />
                             </div>
@@ -94,23 +94,23 @@ export default function Testimonials() {
                                 <img src="asset 48.jpeg" className='rounded-full' alt="" />
                             </div>
                             <div className="ml-4 flex flex-col">
-                                <h3 className='font-bold'>Rick Pastoor</h3>
-                                <a href="#" className='anchor-hover w-fit text-gray-500'>Rise</a>
+                                <h3 className='font-bold'>Max Musing</h3>
+                                <a href="#" className='anchor-hover w-fit text-gray-500'>Basedash</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="rounded-2xl bg-white gradient-hover-outer">
-                    <div className="flex flex-col gap-6 gradient-hover-inner rounded-2xl p-6">
-                        <div className="flex items-center gap-4">
-                            <div className="w-12 h-12  bg-blue-200 flex items-center justify-center rounded-full">
-                                <i className="fa-solid fa-code"></i>
+                <div className="flex-1 rounded-2xl bg-white gradient-hover-outer">
+                    <div className="flex flex-col w-full h-full gap-6 gradient-hover-inner rounded-2xl p-6">
+                        <div className="flex lg:flex-col lg:items-start pl-4 lg:pt-4 items-center gap-4">
+                            <div className="w-12 h-12  bg-yellow-100 flex items-center justify-center rounded-full">
+                                <i className="fa-solid fa-infinity"></i>
                             </div>
-                            <h3 className='text-2xl font-semibold'>Native APIs</h3>
-                        </div>                        
-                        <p className='text-lg font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim sint voluptate tempora veritatis quaerat quia quasi delectus ratione obcaecati? Deleniti quaerat laudantium assumenda. Cum, consectetur quis. Dolore, quas. Doloribus, consequatur voluptates.</p>
-                        <div className="flex">
+                            <h3 className='text-2xl font-semibold'>Code optional</h3>
+                        </div>
+                        <p className='flex-1 text-lg font-light px-4  lg:mt-4'>It was unbelievably simple for us to get a desktop app up and running, and we didn’t have to write a single line of code. Once we had this MVP, we were able to extend the app’s functionality with custom behavior using ToDesktop’s libraries.</p>
+                        <div className="flex pl-4 lg:mt-6">
                             <div className="w-12 h-12 -mr-3 flex justify-center items-center rounded-full overflow-hidden border border-white">
                                 <img src="asset 47.png" className='min-w-16 min-h-16' alt="" />
                             </div>
@@ -118,8 +118,8 @@ export default function Testimonials() {
                                 <img src="asset 48.jpeg" className='rounded-full' alt="" />
                             </div>
                             <div className="ml-4 flex flex-col">
-                                <h3 className='font-bold'>Rick Pastoor</h3>
-                                <a href="#" className='anchor-hover w-fit text-gray-500'>Rise</a>
+                                <h3 className='font-bold'>Pouya Rad</h3>
+                                <a href="#" className='anchor-hover w-fit text-gray-500'>LifeAt</a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ export default function Testimonials() {
                     <h3 className='text-white text-4xl font-bold leading-tight'>Create your desktop app for free.</h3>
 
                     <p className='text-xl font-light text-gray-500'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consequatur fuga, provident omnis mollitia excepturi?
+                    ToDesktop Builder will take you step-by-step through the process of creating your first desktop app in just a few minutes.
                     </p>
 
                     <button className='mt-4 bg-blue-800 py-3 px-4 w-fit rounded-lg hover:opacity-90 text-white flex items-center justify-center gap-4'>
@@ -140,7 +140,7 @@ export default function Testimonials() {
                         <span>Download ToDesktop builder</span>
                     </button>
 
-                    <p className='mt-4 text-gray-400 text-xs italic leading-tight'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos maxime vitae mollitia.</p>
+                    <p className='mt-4 text-gray-400 text-xs italic leading-tight'>*You can create a desktop app and run it on your computer for free. You will only be charged if you want to create a distributable app for your customers.</p>
                 </div>
                 <div className="right">
                     <img src="asset 46.png" className='pl-12 lg:pl-18 lg:pt-12' alt="" />

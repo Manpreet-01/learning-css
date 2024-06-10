@@ -10,7 +10,7 @@ export default function Nav() {
     return (
         <nav className="p-3 flex bg-white justify-between items-center">
             <a href="#" id="brand" className="flex gap-2 items-center flex-1">
-                <img src="vite.svg" alt="logo" className="object-cover max-w-12 max-h-12" />
+                <img src="asset 0.png" alt="logo" className="object-cover max-w-12 max-h-12" />
                 <span className="text-lg font-medium font-display">ToDesktop</span>
             </a>
 
@@ -23,7 +23,7 @@ export default function Nav() {
 
             <div className="hidden lg:flex flex-1 justify-end">
                 <button className="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
-                    <img src="vite.svg" alt="logo" className="object-cover max-w-12 max-h-12" />
+                    <img src="asset 1.svg" alt="logo" className="object-cover max-w-12 max-h-12" />
                     <span>Electron developers</span>
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
@@ -54,7 +54,7 @@ export default function Nav() {
                 <div className="h-1 bg-gray-300"></div>
 
                 <button className="w-full mt-6 flex gap-2 items-center hover:bg-gray-50 px-6 py-4 rounded-lg hover:border-gray-600">
-                    <img src="vite.svg" alt="logo" className="object-cover max-w-12 max-h-12" />
+                    <img src="asset 1.svg" alt="logo" className="object-cover max-w-12 max-h-12" />
                     <span>Electron developers</span>
                 </button>
             </div>
