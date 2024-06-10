@@ -5,6 +5,7 @@ import Bento from './Bento';
 import Steps from './Steps';
 import Testimonials from './Testimonials';
 import Faq from './Faq';
+import Pricing from './Pricing';
 
 export default function Main() {
     return (
@@ -14,6 +15,7 @@ export default function Main() {
             <Steps />
             <Bento />
             <Testimonials />
+            <Pricing />
             <Faq />
         </div>
     );
