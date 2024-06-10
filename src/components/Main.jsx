@@ -1,8 +1,5 @@
-
-
 import React from 'react';
 import Hero from './Hero';
-import { Comment } from 'postcss';
 import Companies from './Companies';
 import Bento from './Bento';
 import Steps from './Steps';
