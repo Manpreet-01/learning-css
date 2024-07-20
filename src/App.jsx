@@ -1,14 +1,10 @@
-import Footer from "./components/Footer";
-import Main from "./components/Main";
-import Nav from "./components/Nav";
+import Card from "./components/Card";
 
 
 export default function App() {
   return (
-    <>
-      <Nav />
-      <Main />
-      <Footer />
-    </>
+    <div className="text-para-custom bg-yellow-custom min-h-screen flex justify-center items-center">
+      <Card />
+    </div>
   );
 }

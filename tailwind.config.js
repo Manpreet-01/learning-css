@@ -8,7 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-
+        'yellow-custom': 'hsl(47,88%, 63%)',
+        'White-custom': 'hsl(0, 0%, 100%)',
+        'Gray-500-custom': 'hsl(0, 0%, 42%)',
+        'Gray-950-custom': 'hsl(0, 0%, 7%)'
+      },
+      fontSize: {
+        'para-custom': '16px'
       },
       fontFamily: {
         "display": ["poppins", "sans-serif"],
@@ -17,4 +23,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
