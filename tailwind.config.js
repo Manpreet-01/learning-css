@@ -8,14 +8,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        'Pale-blue': 'hsl(225, 100%, 94%)',
-        'Bright-blue': 'hsl(245, 75%, 52%)',
-        'Very-pale-blue': 'hsl(225, 100%, 98%)',
-        'Desaturated-blue': 'hsl(224, 23%, 55%)',
-        'Dark-blue': 'hsl(223, 47%, 23%)'
+        White: 'hsl(0, 0%, 100%)',
+        Slate_300: 'hsl(212, 45%, 89%)',
+        Slate_500: 'hsl(216, 15%, 48%)',
+        Slate_900: 'hsl(218, 44%, 22%)'
       },
       fontSize: {
-        'para': '16px'
+        'para': '15px'
+      },
+      fontWeight: {
+        thin_400: 400,
+        thick_700: 700,
       },
       fontFamily: {
         "display": ["poppins", "sans-serif"],
