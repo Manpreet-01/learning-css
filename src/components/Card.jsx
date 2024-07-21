@@ -1,23 +1,54 @@
 
 
-import img from '../images/image-qr-code.png';
+import img from '../assets/images/avatar-jessica.jpeg';
 
 function Card() {
     return (
         <div
-            className='bg-White max-w-[250px] p-4 rounded-2xl flex flex-col text-center items-center gap-y-3'
+            role="card"
+            className='bg-Grey_900 w-[375px] p-6 text-center'
         >
 
-            <img src={img} alt="qr-code-image" className='rounded-lg' />
+            <div className="bg-Grey_800 flex flex-col items-center text-center gap-y-4 rounded-2xl">
+
+                <img src={img} alt="qr-code-image" className='mt-8 rounded-full w-24 aspect-square' />
 
 
-            <h1 className='font-thick_700 text-[18px] text-Slate_900 px-2'>
-                Improve your front-end skills by building projects
-            </h1>
+                <h1 role='name' className="text-White text-2xl font-thick_700">Jessica Randall</h1>
 
-            <p className='font-thin_400 text-[13px] text-Slate_500 px-2 mb-3'>
-                Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-            </p>
+                <p role='location' className="text-Green text-lg font-med_600 -mt-3">London, United Kingdom</p>
+
+                <h2 role='profession' className="text-White font-thin_400">"Front-end developer and avid reader."</h2>
+
+                <div className="grid gap-y-4 w-full px-6 mb-8">
+                    <button
+                        className="bg-Grey_700 text-White font-med_600 py-2 w-full rounded-lg"
+                    >
+                        GitHub
+                    </button>
+                    <button
+                        className="bg-Grey_700 text-White font-med_600 py-2 w-full rounded-lg"
+                    >
+                        Frontend Mentor
+                    </button>
+                    <button
+                        className="bg-Grey_700 text-White font-med_600 py-2 w-full rounded-lg"
+                    >
+                        LinkedIn
+                    </button>
+                    <button
+                        className="bg-Grey_700 text-White font-med_600 py-2 w-full rounded-lg"
+                    >
+                        Twitter
+                    </button>
+                    <button
+                        className="bg-Grey_700 text-White font-med_600 py-2 w-full rounded-lg"
+                    >
+                        Instagram
+                    </button>
+                </div>
+
+            </div>
 
         </div>
     );
