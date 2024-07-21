@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
+
+// .font-outfit 
+// .font-young-serif 
+
 export default {
   content: [
     "./index.html",
@@ -8,27 +12,26 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Slate_300: 'hsl(212, 45%, 89%)',
-        // Slate_500: 'hsl(216, 15%, 48%)',
-        // Slate_900: 'hsl(218, 44%, 22%)',
-        Green: 'hsl(75, 94%, 57%)',
-        White: 'hsl(0, 0%, 100%)',
-        Grey_700: 'hsl(0, 0%, 20%)',
-        Grey_800: 'hsl(0, 0%, 12%)',
-        Grey_900: 'hsl(0, 0%, 8%)',
+        Stone_100: 'hsl(30, 54%, 90%)',
+        Stone_150: 'hsl(30, 18%, 87%)',
+        Stone_600: 'hsl(30, 10%, 34%)',
+        Stone_900: 'hsl(24, 5%, 18%)',
+        Brown_800: 'hsl(14, 45%, 36%)',
+        Rose_800: 'hsl(332, 51%, 32%)',
+        Rose_50: 'hsl(330, 100%, 98%)',
       },
       fontSize: {
-        'para': '15px'
+        'para': '16px'
       },
       fontWeight: {
         thin_400: 400,
         med_600: 600,
         thick_700: 700,
       },
-      fontFamily: {
-        "display": ["poppins", "sans-serif"],
-        "body": ["inter", "sans-serif"]
-      }
+      // fontFamily: {
+      //   "display": ["poppins", "sans-serif"],
+      //   "body": ["inter", "sans-serif"]
+      // }
     },
   },
   plugins: [],
