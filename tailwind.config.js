@@ -21,7 +21,7 @@ export default {
         Rose_50: 'hsl(330, 100%, 98%)',
       },
       fontSize: {
-        'para': '16px'
+        'base': '14px'
       },
       fontWeight: {
         thin_400: 400,
