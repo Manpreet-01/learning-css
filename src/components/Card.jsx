@@ -2,9 +2,7 @@ import iconLuxury from '../images/icon-luxury.svg';
 import iconSedans from '../images/icon-sedans.svg';
 import iconSuvs from '../images/icon-suvs.svg';
 
-function CardItem({ icon, title, para, color, btnClass }) {
-    const bgClass = `bg-[${color}]`;
-
+function CardItem({ icon, title, para, color, bgClass, btnClass }) {
     return (
         <div className={`w-fit p-10 md:pt-8 md:max-w-[250px] ${bgClass}`}>
             <img src={icon} alt='icon' />
@@ -28,21 +26,21 @@ function Card() {
                 title='Sedans'
                 para={para1}
                 icon={iconSedans}
-                color='#e28525'
+                bgClass='bg-[#e28525]'
                 btnClass="text-[#e28525]"
             />
             <CardItem
                 title='Suvs'
                 para={para2}
                 icon={iconSuvs}
-                color='#016972'
+                bgClass='bg-[#016972]'
                 btnClass="text-[#016972]"
             />
             <CardItem
                 title="Luxury"
                 para={para3}
                 icon={iconLuxury}
-                color='#00403f'
+                bgClass='bg-[#00403f]'
                 btnClass="text-[#00403f]"
             />
         </div>
