@@ -3,9 +3,22 @@
 @tailwind utilities;
 
 
+.font-big-shoulders-display {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.font-lexend-deca {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* 
 @layer base {
     body {
-        @apply: font-body;
+        @apply font-body;
     }
     h1,h2,h3 {
         @apply font-display text-gray-800 font-medium;
@@ -26,4 +39,4 @@
     .h2-style {
         @apply text-5xl leading-normal sm:font-semibold max-w-2xl;
     }
-}
+} */
