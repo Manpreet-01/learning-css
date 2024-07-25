@@ -1,48 +1,38 @@
-import iconLuxury from '../images/icon-luxury.svg';
-import iconSedans from '../images/icon-sedans.svg';
-import iconSuvs from '../images/icon-suvs.svg';
-
-function CardItem({ icon, title, para, color, bgClass, btnClass }) {
-    return (
-        <div className={`w-fit p-10 md:pt-8 md:max-w-[250px] ${bgClass}`}>
-            <img src={icon} alt='icon' />
-            <h1 className='font-big-shoulders-display font-bold text-3xl my-8 uppercase'>{title}</h1>
-            <p className='text-xs text-[#c9c8c8] leading-5'>{para}</p>
-            <button className={`mt-8 md:mt-16 py-2 px-6 text-sm bg-white hover:bg-transparent hover:outline-2 hover:outline hover:text-white ${btnClass} rounded-3xl`}>Learn More</button>
-        </div>
-    );
-}
-
 function Card() {
-    const para1 = "Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.";
-    const para2 = "Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.";
-    const para3 = "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.";
-
     return (
-        <div
-            className="m-8 font-lexend-deca flex flex-col md:flex-row rounded-md overflow-hidden text-white"
-        >
-            <CardItem
-                title='Sedans'
-                para={para1}
-                icon={iconSedans}
-                bgClass='bg-[#e28525]'
-                btnClass="text-[#e28525]"
-            />
-            <CardItem
-                title='Suvs'
-                para={para2}
-                icon={iconSuvs}
-                bgClass='bg-[#016972]'
-                btnClass="text-[#016972]"
-            />
-            <CardItem
-                title="Luxury"
-                para={para3}
-                icon={iconLuxury}
-                bgClass='bg-[#00403f]'
-                btnClass="text-[#00403f]"
-            />
+        <div className="max-w-[340px] md:max-w-[700px] rounded-xl overflow-hidden shadow-2xl">
+            <div className="p-8 bg-white flex flex-col gap-y-4">
+                <h1 className="text-xl font-bold text-sky-500">Join our community</h1>
+                <p className="text-lime-500 max-w-[300px] md:max-w-max">30-day, hassle-free money back guarantee</p>
+
+                <p className="text-xs text-gray-500 md:max-w-[75%] leading-6">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+            </div>
+
+            <div className="flex flex-col md:flex-row">
+                <div className="flex-grow bg-[#2bb3b1] p-8">
+                    <h2 className="text-white font-bold">Monthly Subscription</h2>
+                    <p className="my-4">
+                        <span className="text-3xl text-white font-bold">$29 </span>
+                        <span className="text-gray-300">per month</span>
+                    </p>
+
+                    <p className="mb-6 text-sm font-bold text-gray-200">Full access for less than $1 a day</p>
+                    <button className="shadow-md w-full text-white font-bold py-4 rounded-md bg-[#bfdf32]">Sign Up</button>
+                </div>
+
+                <div className="flex-grow bg-[#4abebd] p-8">
+                    <h2 className="text-white font-bold">Why Us</h2>
+                    <p className="mt-4 flex flex-col text-gray-200">
+                        <span>Tutorials by industry experts</span>
+                        <span>Peer &amp; expert code review</span>
+                        <span>Coding exercises</span>
+                        <span>Access to our GitHub repos</span>
+                        <span>Community forum</span>
+                        <span>Flashcard decks</span>
+                        <span>New videos every week</span>
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }
