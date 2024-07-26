@@ -1,37 +1,75 @@
+import star from '../images/icon-star.svg';
+import anneImg from '../images/image-anne.jpg';
+import coltonImg from '../images/image-colton.jpg';
+import ireneImg from '../images/image-irene.jpg';
+
+function Stars({ text, className }) {
+    return (
+        <div className={`flex w-[380px] px-6 py-4 flex-col md:flex-row md:gap-4 items-center gap-y-2 bg-[#f7f2f8] ${className}`}>
+            <div className='flex gap-x-2'>
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+            </div>
+            <p className='text-sm md:text-xs font-bold text-violet-900'>{text}</p>
+        </div>
+    );
+}
+
+
+function SubCards({ img, name, para, className }) {
+    return (
+        <div className={`p-8 rounded-md bg-[#511f50] ${className}`}>
+            <div className='flex items-center gap-x-6'>
+                <img className='w-12 rounded-full aspect-square' src={img} alt="profile-pic" />
+                <div className='flex flex-col text-sm font-bold'>
+                    <span className='text-white'>{name}</span>
+                    <span className='text-[#c978ad]'>Verified Buyer</span>
+                </div>
+            </div>
+            <p className='leading-5 my-4 pr-4 md:pr-0 text-gray-200 font-semibold text-xs'>{para}</p>
+        </div>
+    );
+
+}
+
 function Card() {
     return (
-        <div className="max-w-[340px] md:max-w-[700px] rounded-xl overflow-hidden shadow-2xl">
-            <div className="p-8 bg-white flex flex-col gap-y-4">
-                <h1 className="text-xl font-bold text-sky-500">Join our community</h1>
-                <p className="text-lime-500 max-w-[300px] md:max-w-max">30-day, hassle-free money back guarantee</p>
+        <div className='m-8 md:mx-12 w-full font-poppins'>
+            <div className='mb-4 md:mb-8 flex w-full flex-col md:flex-row md:justify-around'>
+                <div className='flex flex-col items-center md:items-start md:w-[30%] text-center'>
+                    <h1 className="w-[280px] md:w-[400px] my-6 md:pr-24 text-center md:text-left text-3xl md:text-4xl font-extrabold text-[#522352]">10,000+ of our users love our products.</h1>
+                    <p className="w-[320px] md:w-[440px] md:text-left font-semibold text-sm my-4 md:my-2 text-[#948693]">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
+                </div>
 
-                <p className="text-xs text-gray-500 md:max-w-[75%] leading-6">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+                <div className='mt-8 md:mt-0 mb-10 md:w-[500px] flex flex-col items-center justify-center space-y-4'>
+                    <Stars className="md:ml-0" text="Rated 5 Stars in Reviews" />
+                    <Stars className="md:ml-8" text="Rated 5 Stars in Report Guru" />
+                    <Stars className="md:ml-16" text="Rated 5 Stars in BestTech" />
+                </div>
             </div>
 
-            <div className="flex flex-col md:flex-row">
-                <div className="flex-grow bg-[#2bb3b1] p-8">
-                    <h2 className="text-white font-bold">Monthly Subscription</h2>
-                    <p className="my-4">
-                        <span className="text-3xl text-white font-bold">$29 </span>
-                        <span className="text-gray-300">per month</span>
-                    </p>
-
-                    <p className="mb-6 text-sm font-bold text-gray-200">Full access for less than $1 a day</p>
-                    <button className="shadow-md w-full text-white font-bold py-4 rounded-md bg-[#bfdf32]">Sign Up</button>
-                </div>
-
-                <div className="flex-grow bg-[#4abebd] p-8">
-                    <h2 className="text-white font-bold">Why Us</h2>
-                    <p className="mt-4 flex flex-col text-gray-200">
-                        <span>Tutorials by industry experts</span>
-                        <span>Peer &amp; expert code review</span>
-                        <span>Coding exercises</span>
-                        <span>Access to our GitHub repos</span>
-                        <span>Community forum</span>
-                        <span>Flashcard decks</span>
-                        <span>New videos every week</span>
-                    </p>
-                </div>
+            <div className='px-6 md:pl-24 md:pr-32 flex flex-col gap-6 md:flex-row md:items-start'>
+                <SubCards
+                    name="Colton Smith"
+                    img={coltonImg}
+                    para='"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"'
+                    className='md:mt-0'
+                />
+                <SubCards
+                    name="Irene Roberts"
+                    img={ireneImg}
+                    para='"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."'
+                    className='md:mt-4'
+                />
+                <SubCards
+                    name="Anne Wallace"
+                    img={anneImg}
+                    para='"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"'
+                    className='md:mt-8'
+                />
             </div>
         </div>
     );
