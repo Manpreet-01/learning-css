@@ -12,10 +12,14 @@ function Card() {
 
             <p className='my-4 tesxt-md'>Subscribe to get notified</p>
 
-            <div className="flex flex-col md:flex-row w-full md:w-[600px] px-8 mt-4 gap-4">
-                <input className='w-full md:w-[500px] pl-8 border py-2 rounded-3xl' placeholder='Your email address' type="email" name="email" id="email" />
+            <div className="flex flex-col md:flex-row md:items-start w-full md:w-[800px] px-8 mt-4 gap-6">
+                <div>
+                    <input className='email w-full md:w-[500px] pl-8 border py-2 rounded-3xl' placeholder='Your email address' type="email" name="email" id="email" />
+                    <p className='email-error hidden pt-2 text-sm text-center text-red-500'>Please provide a valid email address</p>
+                </div>
                 <button className='w-full md:w-[200px]  text-white text-sm font-semibold border py-3 rounded-3xl bg-blue-600 hover:bg-blue-500'>Notify Me</button>
             </div>
+
 
             <div className='mt-28 md:mt-16'>
                 <img src={illustrationDashboard} alt="illustratioin-dashboard" />

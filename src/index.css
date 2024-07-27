@@ -3,6 +3,34 @@
 @tailwind utilities;
 
 
+
+
+
+
+
+.email:valid {
+    outline: 2px solid green;
+}
+
+.email:invalid {
+    outline: 2px solid red;
+}
+
+.email-error{
+    display: none;
+}
+
+/* show error only if email is invlaid */
+
+.email:invalid + .email-error{
+    display: block;
+}
+
+
+
+
+
+
 @layer base {
     /* body {
         @apply font-body;
