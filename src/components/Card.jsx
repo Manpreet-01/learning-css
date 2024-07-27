@@ -1,75 +1,38 @@
-import star from '../images/icon-star.svg';
-import anneImg from '../images/image-anne.jpg';
-import coltonImg from '../images/image-colton.jpg';
-import ireneImg from '../images/image-irene.jpg';
+import supervisorIcon from '../images/icon-supervisor.svg';
+import calculatorIcon from '../images/icon-calculator.svg';
+import karmaIcon from '../images/icon-karma.svg';
+import teamBuilderIcon from '../images/icon-team-builder.svg';
 
-function Stars({ text, className }) {
+
+function MiniCard({ title, para, icon, className }) {
     return (
-        <div className={`flex w-[380px] px-6 py-4 flex-col md:flex-row md:gap-4 items-center gap-y-2 bg-[#f7f2f8] ${className}`}>
-            <div className='flex gap-x-2'>
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
+        <div className={`space-y-4 md:space-y-3 md:w-[300px] p-8 md:pr-4 md:pb-2 border-t-4 rounded-xl shadow-2xl ${className}`}>
+            <h2 className='text-2xl md:text-sm font-semibold'>{title}</h2>
+            <p className='text-gray-500 md:text-xs pr-20 md:pr-4'>{para}</p>
+            <div className='flex justify-end pr-4 pt-8 md:py-4'>
+                <img src={icon} alt="icon" className='h-20 md:h-12' />
             </div>
-            <p className='text-sm md:text-xs font-bold text-violet-900'>{text}</p>
         </div>
     );
-}
-
-
-function SubCards({ img, name, para, className }) {
-    return (
-        <div className={`p-8 rounded-md bg-[#511f50] ${className}`}>
-            <div className='flex items-center gap-x-6'>
-                <img className='w-12 rounded-full aspect-square' src={img} alt="profile-pic" />
-                <div className='flex flex-col text-sm font-bold'>
-                    <span className='text-white'>{name}</span>
-                    <span className='text-[#c978ad]'>Verified Buyer</span>
-                </div>
-            </div>
-            <p className='leading-5 my-4 pr-4 md:pr-0 text-gray-200 font-semibold text-xs'>{para}</p>
-        </div>
-    );
-
 }
 
 function Card() {
     return (
-        <div className='m-8 md:mx-12 w-full font-poppins'>
-            <div className='mb-4 md:mb-8 flex w-full flex-col md:flex-row md:justify-around'>
-                <div className='flex flex-col items-center md:items-start md:w-[30%] text-center'>
-                    <h1 className="w-[280px] md:w-[400px] my-6 md:pr-24 text-center md:text-left text-3xl md:text-4xl font-extrabold text-[#522352]">10,000+ of our users love our products.</h1>
-                    <p className="w-[320px] md:w-[440px] md:text-left font-semibold text-sm my-4 md:my-2 text-[#948693]">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
-                </div>
+        <div className="pt-20 md:pt-8 px-8 md:px-0 font-poppins md:flex md:flex-col md:items-center">
+            <h1 className="text-2xl space-y-2 my-6 md:m-4">
+                <span className="block text-gray-500">Reliable, efficient delivery</span>
+                <span className="font-bold">Powered by Technology</span>
+            </h1>
 
-                <div className='mt-8 md:mt-0 mb-10 md:w-[500px] flex flex-col items-center justify-center space-y-4'>
-                    <Stars className="md:ml-0" text="Rated 5 Stars in Reviews" />
-                    <Stars className="md:ml-8" text="Rated 5 Stars in Report Guru" />
-                    <Stars className="md:ml-16" text="Rated 5 Stars in BestTech" />
-                </div>
-            </div>
+            <p className="md:text-center md:w-[700px] text-xl md:text-sm text-gray-500">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
 
-            <div className='px-6 md:pl-24 md:pr-32 flex flex-col gap-6 md:flex-row md:items-start'>
-                <SubCards
-                    name="Colton Smith"
-                    img={coltonImg}
-                    para='"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"'
-                    className='md:mt-0'
-                />
-                <SubCards
-                    name="Irene Roberts"
-                    img={ireneImg}
-                    para='"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."'
-                    className='md:mt-4'
-                />
-                <SubCards
-                    name="Anne Wallace"
-                    img={anneImg}
-                    para='"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"'
-                    className='md:mt-8'
-                />
+            <div className='mt-36 md:mt-0 pb-16 space-y-8 md:flex md:items-center md:gap-8'>
+                <MiniCard className={"border-t-sky-500"} title={"Supervisor"} para={"Monitors activity to identify project roadblocks"} icon={supervisorIcon} />
+                <div className='space-y-4'>
+                    <MiniCard className={"border-t-red-500"} title={"Team Builder"} para={"Scans our talent network to create the optimal team for your project"} icon={teamBuilderIcon} />
+                    <MiniCard className={"border-t-yellow-500"} title={"Karma"} para={"Regularly evaluates our talent to ensure quality"} icon={karmaIcon} />
+                </div>
+                <MiniCard className={"border-t-sky-500"} title={"Calculator"} para={"Uses data from past projects to provide better delivery estimates"} icon={calculatorIcon} />
             </div>
         </div>
     );
