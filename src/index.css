@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+.bg-img {
+    background-image: url(./images/bg-intro-desktop.png);
+}
+
 @layer base {
     /* body {
         @apply font-body;

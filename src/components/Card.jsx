@@ -1,38 +1,28 @@
-import supervisorIcon from '../images/icon-supervisor.svg';
-import calculatorIcon from '../images/icon-calculator.svg';
-import karmaIcon from '../images/icon-karma.svg';
-import teamBuilderIcon from '../images/icon-team-builder.svg';
-
-
-function MiniCard({ title, para, icon, className }) {
-    return (
-        <div className={`space-y-4 md:space-y-3 md:w-[300px] p-8 md:pr-4 md:pb-2 border-t-4 rounded-xl shadow-2xl ${className}`}>
-            <h2 className='text-2xl md:text-sm font-semibold'>{title}</h2>
-            <p className='text-gray-500 md:text-xs pr-20 md:pr-4'>{para}</p>
-            <div className='flex justify-end pr-4 pt-8 md:py-4'>
-                <img src={icon} alt="icon" className='h-20 md:h-12' />
-            </div>
-        </div>
-    );
-}
-
 function Card() {
     return (
-        <div className="pt-20 md:pt-8 px-8 md:px-0 font-poppins md:flex md:flex-col md:items-center">
-            <h1 className="text-2xl space-y-2 my-6 md:m-4">
-                <span className="block text-gray-500">Reliable, efficient delivery</span>
-                <span className="font-bold">Powered by Technology</span>
-            </h1>
+        <div className="bg-red-400 bg-img px-8 py-24 md:px-24 grid md:grid-cols-2 md:gap-x-12 md:place-content-center max-w-[1200px] text-white leading-relaxed">
+            <div className="grid text-center md:text-start md:place-content-center gap-y-8">
+                <h1 className="text-3xl md:text-4xl font-bold">Learn to code by watching others</h1>
+                <p className="text-gray-200 text-center md:text-start font-xs">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+            </div>
 
-            <p className="md:text-center md:w-[700px] text-xl md:text-sm text-gray-500">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+            <div className="grid place-content-start gap-y-4 mt-16 md:mt-0">
+                <button className="bg-violet-800 hover:bg-violet-700 hover:scale-[1.02] py-4 px-28 md:px-16 leading-relaxed rounded-md text-xs text-white">
+                    <span className="font-bold">Try it free 7 days</span> then $20/mo. thereafter
+                </button>
 
-            <div className='mt-36 md:mt-0 pb-16 space-y-8 md:flex md:items-center md:gap-8'>
-                <MiniCard className={"border-t-sky-500"} title={"Supervisor"} para={"Monitors activity to identify project roadblocks"} icon={supervisorIcon} />
-                <div className='space-y-4'>
-                    <MiniCard className={"border-t-red-500"} title={"Team Builder"} para={"Scans our talent network to create the optimal team for your project"} icon={teamBuilderIcon} />
-                    <MiniCard className={"border-t-yellow-500"} title={"Karma"} para={"Regularly evaluates our talent to ensure quality"} icon={karmaIcon} />
+                <div className="bg-white p-8 grid gap-y-2 rounded-md">
+                    <form className="grid gap-y-4">
+                        <input className="py-3 border-gray-400 rounded-md border placeholder:pl-8 placeholder:text-xs placeholder:font-bold" placeholder="First Name" type="text" />
+                        <input className="py-3 rounded-md border placeholder:pl-8 placeholder:text-xs placeholder:font-bold" placeholder="Last Name" type="text" />
+                        <input className="py-3 rounded-md border placeholder:pl-8 placeholder:text-xs placeholder:font-bold" placeholder="Email Address" type="email" />
+                        <input className="py-3 rounded-md border placeholder:pl-8 placeholder:text-xs placeholder:font-bold" placeholder="Password" type="password" />
+                        <button className="bg-green-500 hover:bg-green-400 hover:scale-[1.02] rounded-md py-4 text-xs font-bold uppercase">Claim your free trial</button>
+                    </form>
+                    
+                    <p className="text-gray-500 px-4 text-xs text-center leading-relaxed">By clicking the button, you are agreeing to our <span className="text-red-400 hover:text-red-500 text-sm hover:underline hover:cursor-pointer font-bold">Terms and Services</span></p>
                 </div>
-                <MiniCard className={"border-t-sky-500"} title={"Calculator"} para={"Uses data from past projects to provide better delivery estimates"} icon={calculatorIcon} />
+
             </div>
         </div>
     );
